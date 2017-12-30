@@ -1,6 +1,7 @@
 "use strict";
 
 const TicTacToe = artifacts.require('./TicTacToe.sol');
+const TicTacToe2 = artifacts.require('./TicTacToe2.sol');
 
 
 /**
@@ -13,4 +14,5 @@ const TicTacToe = artifacts.require('./TicTacToe.sol');
  */
 module.exports = (deployer, network, accounts)=> {
     deployer.deploy(TicTacToe);
+    deployer.deploy(TicTacToe2);
 };
